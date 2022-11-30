@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model MyRoutine.Models.Operator
+
+
+@{
+    ViewBag.Title = "TRDI";
+    ViewBag.Menu = "Add Operator";
+}
+
+<h1>@ViewBag.Title</h1>
+<hr />
+<h2>@ViewBag.Menu</h2>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group mb-3">
+                <label asp-for="OperatorId" class="control-label"></label>
+                <input asp-for="OperatorId" class="form-control" placeholder="Example:<000001>" />
+                <span asp-validation-for="OperatorId" class="text-danger"></span>
+            </div>
+            <div class="form-group mb-3">
+                <label asp-for="OperatorName" class="control-label"></label>
+                <input asp-for="OperatorName" class="form-control" disabled />
+                <span asp-validation-for="OperatorName" class="text-danger"></span>
+            </div>
+            <div class="form-group col-md-4 mb-3">
+                <label asp-for="Authority" class="control-label"></label>
+                <select class="form-control form-select" name="authority" id"authority" asp-items="ViewBag.AuthorityList"></select>
+                @*<input asp-for="Authority" class="form-control form-select" />*@
+                <span asp-validation-for="Authority" class="text-danger"></span>
+            </div>
+            <input type="submit" value="ADD" class="btn btn-primary" />
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+<hr />
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,42 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "datatables@1.10.21",
+      "destination": "wwwroot/lib/datatables/"
+    },
+    {
+      "library": "datatables.net@2.1.1",
+      "destination": "wwwroot/lib/datatables.net/"
+    },
+    {
+      "library": "datatables.net-buttons@2.3.3",
+      "destination": "wwwroot/lib/datatables.net-buttons/"
+    },
+    {
+      "library": "jszip@3.10.1",
+      "destination": "wwwroot/lib/jszip/"
+    },
+    {
+      "library": "datatables.net-bs5@1.13.1",
+      "destination": "wwwroot/lib/datatables.net-bs5/"
+    },
+    {
+      "library": "datatables.net-buttons-bs@2.3.3",
+      "destination": "wwwroot/lib/datatables.net-buttons-bs/"
+    },
+    {
+      "library": "datatables.net-jqui@2.1.1",
+      "destination": "wwwroot/lib/datatables.net-jqui/"
+    },
+    {
+      "library": "datatables.net-buttons-bs5@2.3.3",
+      "destination": "wwwroot/lib/datatables.net-buttons-bs5/"
+    },
+    {
+      "library": "pdfmake@0.2.6",
+      "destination": "wwwroot/lib/pdfmake/"
+    }
+  ]
+}
